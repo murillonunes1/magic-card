@@ -6,4 +6,4 @@ Gathering a partir de uma coleção específica.
 
 Tecnologias usadas: Angular, SCSS.
 
-A API utilizada será https://docs.magicthegathering.io
+API utilizada: https://docs.magicthegathering.io
