@@ -1,0 +1,9 @@
+<div *ngFor="let card of cards" class="card">
+    <img [src]="card.imageUrl" [alt]="card.name" />
+    <div class="card-details">
+      <h3>{{ card.name }}</h3>
+      <p><strong>Mana Cost:</strong> {{ card.manaCost }}</p>
+      <p><strong>Color Identity:</strong> {{ card.colorIdentity?.join(', ') }}</p>
+      <p><strong>Text:</strong> {{ card.text }}</p>
+    </div>
+  </div>  

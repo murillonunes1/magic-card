@@ -1,0 +1,14 @@
+<div>
+    <label for="set-code">Set Code:</label>
+    <input id="set-code" [(ngModel)]="setCode" placeholder="Enter set code" />
+    <button (click)="openPack()">Open Pack</button>
+  </div>
+  
+  <div *ngIf="openedCards.length">
+    <h2>Opened Cards</h2>
+    <div *ngFor="let card of openedCards">
+      <img [src]="card.imageUrl" [alt]="card.name" />
+      <p>{{ card.name }}</p>
+    </div>
+  </div>
+  

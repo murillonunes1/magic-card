@@ -1,0 +1,14 @@
+<div class="filter-container">
+    <label for="card-name">Nome:</label>
+    <input id="card-name" [(ngModel)]="cardName" (input)="onFiltersChange()" placeholder="Nome" class="filter-input"/>
+    
+    <label for="block">Bloco</label>
+    <div class="dropdown">
+      <button class="dropbtn">Bloco</button>
+      <div class="dropdown-content">
+        <button *ngFor="let block of blocks" (click)="selectBlock(block)">{{ block }}</button>
+      </div>
+    </div>
+    
+    <button (click)="onFiltersChange()" class="search-button">Buscar</button>
+  </div>  

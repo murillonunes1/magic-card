@@ -1,0 +1,21 @@
+.set, .card {
+    background-color: #333;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 8px;
+    color: white;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .set:hover {
+    background-color: #444;
+  }
+  
+  .card img {
+    max-width: 50px;
+    margin-right: 20px;
+    border-radius: 4px;
+  }
+  

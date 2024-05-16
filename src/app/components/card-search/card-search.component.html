@@ -1,0 +1,16 @@
+<div>
+    <app-card-filters (filtersChanged)="onFiltersChanged($event)"></app-card-filters>
+  </div>
+  
+  <div *ngIf="sets.length">
+    <h2>Search Results</h2>
+    <div *ngFor="let set of sets" class="set" (click)="selectSet(set.id)">
+      <p>{{ set.name }}</p>
+    </div>
+  </div>
+  
+  <div *ngIf="creatures.length">
+    <h2>Selected Creatures</h2>
+    <app-card-display [cards]="creatures"></app-card-display>
+  </div>    
+  
